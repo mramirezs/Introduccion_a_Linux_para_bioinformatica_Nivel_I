@@ -1,4 +1,4 @@
-# Introduccion_a_Linux_para_bioinformatica
+# Introduccion a Linux para Bioinformatica
 Familiarizarse con los comandos básicos del sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS).
 
 ## Instructor 🤓  
