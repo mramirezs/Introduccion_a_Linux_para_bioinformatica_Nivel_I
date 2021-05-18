@@ -5,13 +5,7 @@ Familiarizarse con los comandos básicos del sistema operativo Linux para el man
 Manuel Alain Ramírez Sáenz --> Llamame `MARS`
 
 
-## Introducción a la Bioinformática 🚀
-
-Algunas definiciones de Bioinformática:
-
-```
-Biología Computacional: Aplicación de técnicas analíticas y cuantitativas para el modelamiento de sistemas biológicos.
-```
+## Bioinformática 🚀
 
 ```
 "La bioinformática comprende los métodos matemáticos, estadísticos y computacionales que pretenden solucionar 
@@ -19,17 +13,6 @@ problemas biológicos usando secuencias de ADN y aminoácidos e información rel
                                                                             Fredj Tekaia - Instituto Pasteur
 ```
 
-```
-“La bioinformática es el estudio de la información biológica desde su almacenamiento en el genoma hasta la obtención 
-de los productos génicos en la célula” esto involucra la creación y desarrollo de tecnologías informáticas y 
-computacionales para la resolución de problemas en biología molecular”.
-                                                                        Stanford Center for Profesional Development
-```
-
-```
-Uso de técnicas computacionales, matemáticas y estadísticas para el análisis, interpretación y generación de datos 
-biológicos.
-```
 ## Requerimientos
 
 **Necesario:**
@@ -40,7 +23,7 @@ biológicos.
 * Conocimiento en el manejo de sistemas de cómputo.
 
 **Recomendado:**
-* Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux).
+* _Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux).
 
 **Muy deseable:**
 * Experiencia con algún lenguaje de programación.
