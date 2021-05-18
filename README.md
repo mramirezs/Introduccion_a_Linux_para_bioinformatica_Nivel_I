@@ -1,8 +1,5 @@
 # Introduccion_a_Linux_para_bioinformatica
-Familiarizarse con el sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS).
-
-# Introduccion_a_Linux_para_bioinformatica
-Familiarizarse con el sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS).
+Familiarizarse con los comandos básicos del sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS).
 
 ## Instructor 🤓  
 Manuel Alain Ramírez Sáenz --> Llamame `MARS`
