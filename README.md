@@ -23,7 +23,7 @@ problemas biológicos usando secuencias de ADN y aminoácidos e información rel
 * Conocimiento en el manejo de sistemas de cómputo.
 
 **Recomendado:**
-* _Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux).
+* _Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux)._
 
 **Muy deseable:**
 * Experiencia con algún lenguaje de programación.
