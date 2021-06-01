@@ -1,5 +1,5 @@
 # Introducción a Linux para Bioinformática
-Familiarizarse con los comandos básicos del sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS).
+Familiarizarse con los comandos básicos del sistema operativo Linux para el manejo de data relacionada con Next Generation Sequencing (NGS). En este caso trabajaremos con datos de la tecnología de Illumina, el cual pueden revisar en https://github.com/bioinfoperu/Introduccion_Next_Genetarion_Sequencing
 
 ## Instructor 🤓  
 Manuel Alain Ramírez Sáenz --> Llámame `MARS`
