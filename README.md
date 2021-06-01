@@ -137,6 +137,9 @@ Para averiguar lo que está en su directorio principal, escribimos:
 $ ls
 ```
 
+![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/ls.PNG)  
+  
+  
 El comando ls (L minúscula y S minúscula) muestra el contenido del directorio actual de trabajo.
 
 Puede que no haya archivos visibles en su directorio personal o **home**, en cuyo caso, regresará al prompt de LINUX. Alternativamente, puede haber ya algunos archivos incluidos por el administrador del sistema cuando se creó su cuenta.
