@@ -3,7 +3,7 @@ Familiarizarse con los comandos básicos del sistema operativo Linux para el man
 
 Si quieres saber más sobre NGS te invitamos a que revises el tutorial de NGS: https://github.com/bioinfoperu/Introduccion_Next_Genetarion_Sequencing
 
-## Instructor 🤓  
+## Instructor 👨‍🏫  
 Manuel Alain Ramírez Sáenz --> Llámame `MARS`
 
 
