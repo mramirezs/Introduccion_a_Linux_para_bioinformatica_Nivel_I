@@ -10,31 +10,29 @@ Manuel Alain Ramírez Sáenz --> Llámame `MARS`
 ## Bioinformática 🚀
 
 ```
-"La bioinformática comprende los métodos matemáticos, estadísticos y computacionales que pretenden solucionar 
-problemas biológicos usando secuencias de ADN y aminoácidos e información relacionada".
-                                                                            Fredj Tekaia - Instituto Pasteur
+"La bioinformática comprende los métodos matemáticos, estadísticos y computacionales que pretenden solucionar  problemas biológicos usando secuencias de ADN y aminoácidos e información relacionada".
+                                                                                                                                            Fredj Tekaia - Instituto Pasteur
 ```
 
 ## Requerimientos
 
 **Necesario:**
-* Conocimiento y entendimiento del Dogma Central de la Biología molecular.
-* Conocimiento en Biología Molecular (bioquímica, biología molecular, biofísica molecular).
+* Conocimiento y entendimiento del Dogma Central de la Biología Molecular.
+* Conocimiento en Biología Molecular (Bioquímica, Biología Molecular, Biofísica Molecular).
 
 **Muy necesario:**
 * Conocimiento en el manejo de sistemas de cómputo.
 
 **Recomendado:**
-* _Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux)._
+* **_Manejo básico de linea de comandos en ambientes UNIX (GNU/Linux)._**
 
 **Muy deseable:**
-* Experiencia con algún lenguaje de programación.
+* Experiencia con algún lenguaje de programación (Python, Perl o R).
 
 ## Objetivo de la Bioinformática
 
 ```
-"Profundizar en nuestro entendimiento acerca de los organismos vivos y sus relaciones, 
-partiendo desde el genoma que los codifica"
+"Profundizar en nuestro entendimiento acerca de los organismos vivos y sus relaciones, partiendo desde el genoma que los codifica"
 ```
 
 ## Campos de trabajo
@@ -43,21 +41,20 @@ partiendo desde el genoma que los codifica"
 * Análisis de DNA (ORFs, contenidos GC, etc.)
 * Recuperación de secuencias.
 * Ensamblajes de secuencias.
-* Predicción de estructuras de proteícas.
-* Visualización de estructuras de proteícas.
+* Predicción de estructuras de proteínas.
+* Visualización de estructuras de proteínas.
 * Microarreglos.
 * PCR.
 * Filogenia.
 * Educación.
 
 ```
-La Bioinformática provee de algoritmos, bases de datos, interfaces y herramientas estadísticas para resolver nuestras 
-preguntas biolólgicas.
+La Bioinformática provee de algoritmos, bases de datos, interfaces y herramientas estadísticas para resolver nuestras preguntas biolólgicas.
 ```
 
 ## Sistema operativo Linux
 
-Muchos desarrolladores de programas en Bioinformática prefieren el uso del sistema operativo Linux. Aqui algunos ejemplos sobre estos programas: FASTQC, trimmomatic, kraken, bwa, bowtie, SPAdes, etc. Dichos programas requieren de un usuario con un buen nivel en el manejo de Linux; sin embargo, muchos investigadores que necesitan trabajar con Next Generation Sequecing (NGS) no son familiares con el sistema operativo Linux y requieren de una introducción en el tema. Ahora, el usuario se preocupará entre conocer las características de Linux y los programas mientras aprende sobre las herramientas paa NGS.
+Muchos desarrolladores de programas en Bioinformática prefieren el uso del sistema operativo Linux. Aqui algunos ejemplos sobre estos programas: FASTQC, trimmomatic, kraken, bwa, bowtie, SPAdes, etc. Dichos programas requieren de un usuario con un buen nivel en el manejo de Linux; sin embargo, muchos investigadores que necesitan trabajar con Next Generation Sequecing (NGS) no son familiares con el sistema operativo Linux y requieren de una introducción en el tema. Ahora, el usuario se preocupará entre conocer las características de Linux y los programas mientras aprende sobre las herramientas para NGS.
 
 ## Objetivo
 
@@ -65,7 +62,10 @@ El objetivo de este módulo es **introducir a los participantes en el sistema op
 
 ## ¿Qué es LINUX?
 
-LINUX es un sistema operativo que fue desarrollado por primera vez en la década de los 60’s y ha estado en constante desarrollo desde entonces. Por sistema operativo, nos referimos al conjunto de programas que hacen que la computadora trabaje. **Es un sistema multi-usuario estable, multi-tarea para servidores, equipos de escritorio y portátiles.**
+LINUX es un sistema operativo que fue desarrollado por primera vez en la década de los 90’s por Linus Torvalds, y ha estado en constante desarrollo desde entonces. Por sistema operativo, nos referimos al conjunto de programas que hacen que la computadora trabaje. Además Linux es:
+
+* Es un sistema multi-usuario estable. 
+* Multi-tarea para servidores, equipos de escritorio y portátiles.
 
 El sistemas Linux disponen de una interfaz gráfica de usuario (GUI), similar a Microsoft Windows, que proporciona un entorno fácil de usar; sin embargo, se requieren conocimientos de Linux para las operaciones que no estén cubiertos por un programa gráfico, o cuando no hay una interfaz de ventanas disponibles, por ejemplo, cuando se trabaja en un servidor local o en una nube, ya que ellos tienen una sesion de telnet. Hay muchas versiones diferentes de Linux, aunque comparten similitudes comunes. Las variedades más populares de LINUX son los sistemas Sun Solaris, GNU/Linux y MacOS X.
 
@@ -74,23 +74,24 @@ El sistemas Linux disponen de una interfaz gráfica de usuario (GUI), similar a 
 El sistema operativo LINUX se compone de tres partes: **el núcleo (Kernel), el shell y los programas.**
 
 ![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/OS_Linux.PNG)
+
 _Introduction to Linux and Command Line Tools for Bioinformatics_ (Figure 1.1)
 
 ## El nucleo (kernel)
 
 El kernel de Linux es el centro del sistema operativo: asigna el tiempo y la memoria a los programas, maneja el almacenamiento de archivos y la comunicación en respuesta a las llamadas del sistema operativo.
 
-Como ejemplo, la forma en que el **shell** y el **kernel** trabajan juntos, supongamos que un usuario escribe **rm myfile** (que tiene el efecto de eliminar el file myfile). El **shell** busca en el almacén de archivos, el archivo que contiene el programa rm, y luego pide al **kernel**, a través de las llamadas del sistema, ejecuta el programa rm en myfile. Cuando el proceso rm myfile ha terminado de ejecutarse, el shell devuelve el indicador de LINUX para el usuario, lo que indica que se está a la espera de nuevas órdenes.
+Como ejemplo, la forma en que el **shell** y el **kernel** trabajan juntos, supongamos que un usuario escribe **rm myfile** (que tiene el efecto de eliminar el file myfile). El **shell** busca en el almacén de archivos, el archivo que contiene el programa rm, y luego pide al **kernel**, a través de las llamadas del sistema, ejecuta el programa **rm** en **myfile**. Cuando el proceso **rm myfile** ha terminado de ejecutarse, el shell devuelve el indicador de LINUX para el usuario, lo que indica que se está a la espera de nuevas órdenes.
 
 ## El shell
   
-El **shell** actúa como una interfaz entre el **usuario** y el **kernel**. Cuando un usuario inicia una sesión, el programa  de inicio de sesión comprueba el nombre de usuario y contraseña, y luego se inicia otro programa llamado el shell. El shell es un **intérprete de línea de comandos** (ILC). Interpreta los comandos que el usuario escribe para que puedan ser llevadas a cabo. Los comandos son los mismos programas, cuando se terminan, el shell retorna al al usuario para los siguientes pasos a desarrollar (**$** en nuestros sistemas).
+El **shell** actúa como una interfaz entre el **usuario** y el **kernel**. Cuando un usuario inicia una sesión, el programa de inicio de sesión comprueba el nombre de usuario y contraseña, y luego se inicia otro programa llamado el shell. El shell es un **intérprete de línea de comandos** (ILC). Interpreta los comandos que el usuario escribe para que puedan ser llevadas a cabo. Los comandos son los mismos programas, cuando se terminan, el shell retorna al al usuario para los siguientes pasos a desarrollar (**$** en nuestros sistemas).
 
 El usuario experto puede personalizar su propia shell, y los usuarios pueden utilizar diferentes shells en la misma máquina. Para el tema de hoy, el profesor y los alumnos la **bash** shell de forma predeterminada.
 
 El bash shell tiene ciertas características que ayudan al usuario introducir comandos.
 
-**Finalización del nombre** - Al escribir parte del nombre de un comando, nombre de archivo o directorio y pulsando el <Tab> (una vez), el bash shell completará el resto del nombre de forma automática. Si en el directorio se encuentra más de un nombre que empiece con esas letras que ha escrito, se emitirá un resultado, mostrará una cantidad de palabras o las palabras encontradas que empiezan con esas letras.
+**Finalización del nombre** - Al escribir parte del nombre de un comando, nombre de archivo o directorio y pulsando el **<Tab>** (una vez), el bash shell completará el resto del nombre de forma automática. Si en el directorio se encuentra más de un nombre que empiece con esas letras que ha escrito, se emitirá un resultado, mostrará una cantidad de palabras o las palabras encontradas que empiezan con esas letras.
 
 **Historial** - El shell mantiene una lista de comandos que ha escrito. Si usted tiene que repetir un comando, utilice las teclas de cursor para desplazarse hacia arriba y abajo en la lista de comandos anteriores o puede escribir el comando **history** para poder observar una lista de los comandos que estuvo trabajando. 
 
@@ -102,14 +103,13 @@ El bash shell tiene ciertas características que ayudan al usuario introducir co
 
 Un proceso es un programa en ejecución identificado por un PID único (identificador de proceso).
 
-Un archivo es una colección de datos. Son creados por los usuarios que utilizan los editores de texto, compiladores en 
-procesos, etc.
+Un archivo es una colección de datos. Son creados por los usuarios que utilizan los editores de texto, compiladores en procesos, etc.
 
 Ejemplos de archivos:
 
 * Un documento (informe, ensayo, etc.)
 
-* El texto de un programa escrito en un lenguaje de programación de alto nivel (Python, R, etc).
+* El texto de un programa escrito en un lenguaje de programación de alto nivel (Python, R, Perl, etc).
 
 * Instrucciones comprensibles directamente a la máquina e incomprensible para un usuario ocasional, por ejemplo, una  colección de dígitos binarios (un archivo ejecutable o binaria);
 
@@ -117,11 +117,11 @@ Ejemplos de archivos:
 
 ## La estructura de los directorios
 
-Todos los archivos se agrupan en la estructura de directorios. El sistema de archivos se organiza en una estructura jerárquica, como un **árbol invertido**. La parte superior de la jerarquía se denomina tradicionalmente root (escrita como una barra /)
+Todos los archivos se agrupan en la estructura de directorios. El sistema de archivos se organiza en una estructura jerárquica, como un **árbol invertido**. La parte superior de la jerarquía se denomina tradicionalmente **root** (escrita como una barra /)
 
 ![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/Estructure_Directories.PNG)
 
-  _En clase mencionaremos que contiene cada diretorio_
+_En clase mencionaremos que contiene cada diretorio_
 
 ## Empezamos con los comandos básicos 
 
@@ -177,7 +177,7 @@ Otras opciones:
 
 ### mkdir (make directory)
 
-Crearemos subdirectorios dentro de nuestro directorio personal para guardar los archivos que se crearan y a ser usados en este tutorial. Crearemos un subdirectorio llamado
+Crearemos subdirectorios dentro de nuestro directorio personal para guardar los archivos que se crearan y a ser usados en este tutorial. Crearemos un subdirectorio llamado **Project**
 
 ```bash
 ~$ mkdir Project
@@ -196,13 +196,13 @@ Desktop  Documents  Downloads  Music  Pictures  Project  Videos Project
 
 El comando cd, significa cambio del actual directorio de trabajo a otro directorio. El directorio de trabajo actual puede ser pensado como el directorio donde se encuentra, es decir, su posición actual en el árbol del sistema de archivos.
 
-Para cambiar hacia el directorio **CursoLinux**, escribimos:
+Para cambiar hacia al directorio **Project**, escribimos:
 
 ```bash
 ~$ cd Project
 ```
 
-Luego, si escribimos **ls** para ver el contenido nos daremos cuenta que la carpeta se encuentr vacía.
+Luego, si escribimos **ls** para ver el contenido nos daremos cuenta que la carpeta se encuentra vacía.
 
 ***Ejercicio 1***
 
@@ -210,7 +210,7 @@ Crearemos otros directorios dentro del directorio **Project**, con los nombres *
 
 ## 1.4. Lo directorios . y ..
 
-Aún en el directorio **Project**, escribir
+Aún en el directorio **Project**, escribiremos:
 
 ```bash
 ~/Project$ ls -a 
@@ -240,6 +240,10 @@ Significa quedarse donde está (el directorio **Project**).
 ```
 Le llevará un directorio en la jerarquía (de nuevo a su directorio personal). **¡Inténtalo ahora!**
 
+***Ejercicio 2***
+
+Cambiaremos entre de directorios dentro de los directorios que hemos creado (**raw_data** y **data**).
+  
 `NOTA 3`: escribiendo **cd** sin argumentos siempre te devuelve a su directorio home. Esto es muy útil si se pierden en el sistema de archivos.
 
 ## 1.5. Nombre de rutas y pathnames
@@ -259,21 +263,21 @@ $ pwd
 /home/mars/   
 ```
 
-***Exercise 2***
+***Ejercicio 3***
 
-Use los comandos cd, ls y pwd para explorar el sistema de archivos.
+Haremos uso del comando **pwd** dentro de las carpeta **raw_data** y **data**, de esa manera expolaremos los sistemas de archivos.
 
 ## 1.6 Más información sobre el directorio home y pathnames
 
 ## Entendiendo pathnames
 
-Primero escribiremos cd para volver a su directorio home, a continuación, escribiremos:
+Primero escribiremos **cd** para volver a su directorio home, a continuación, escribiremos:
 
 ```bash
 $ ls Project   
 ```
 
-Para listar el contenido de tus directorios Project. Ahora escribamos
+Para listar el contenido de tu directorio Project. Ahora escribiremos
 
 ```bash
 $ ls raw_data
@@ -283,7 +287,7 @@ Recibirás un mensaje como este:
 
 ***raw_data: No such file or directory***	
 
-La razón es, raw_data no es tu directorio actual de trabajo. Para utilizar un comando en un archivo (o directorio) no en el directorio de trabajo actual (el directorio que se encuentran actualmente en), debe cambiar al directorio correcto, o especificar su ruta completa. Para listar los contenidos del directorio Genoma, debemos escribir: 
+La razón es, raw_data no es tu directorio actual de trabajo. Para utilizar un comando en un archivo (o directorio) no en el directorio de trabajo actual (el directorio que se encuentran actualmente en), debe cambiar al directorio correcto, o especificar su ruta completa. Para listar los contenidos del directorio raw_data, debemos escribir: 
 
 ```bash
 $ ls Project/raw_data
@@ -291,7 +295,7 @@ $ ls Project/raw_data
 
 ### ~ (tu directorio home) ###
 
-Los directorios personales también pueden ser referidos por el carácter de tilde **~**. Se puede utilizar para especificar rutas a partir de su directorio personal. Por lo que escribimos:
+Los directorios personales también pueden ser referidos por el carácter de tilde **~** (~ = /home/mars). Se puede utilizar para especificar rutas a partir de su directorio personal. Por lo que escribimos:
 
 ```bash
 $ ls ~/Project
@@ -307,31 +311,31 @@ Mostrará una lista de los contenidos del directorio Project, no importa donde s
 
 **cp** es el comando que hace una copia del archivo en el directorio de trabajo actual.
 
-Lo que vamos a hacer ahora es descargar los archivos fastq a nuestra carpeta Project con el comando **wget**:
+Lo que vamos a hacer ahora es descargar los archivos comprimidos fastq a nuestra carpeta Project con el comando **wget**:
 
 ```bash
-$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_1.fastq.gz
-$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_2.fastq.gz  
+~/Project$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_1.fastq.gz
+~/Project$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_2.fastq.gz  
 ```
 Luego, tomar cada archivo y hacer uso del comando **cp** para copiarlo en el directorio de raw_data.
 
 ```bash
-$ cp ERR000001_1.fastq.gz raw_data
-$ cp ERR000001_2.fastq.gz raw_data
+~/Project$ cp ERR000001_1.fastq.gz raw_data
+~/Project$ cp ERR000001_2.fastq.gz raw_data
 ```
 
 Otras formas de copiar los archivos:
 ```bash  
-$ cp ERR000001_1.fastq.gz R1.fastq.gz
-$ cp ERR000001_2.fastq.gz R2.fastq.gz
+~/Project$$ cp ERR000001_1.fastq.gz R1.fastq.gz
+~/Project$$ cp ERR000001_2.fastq.gz R2.fastq.gz
 ```
   
 ```bash  
 Copiar un archivo desde su origen, en este caso estando en la carpeta **data**: 
-$ cp /home/mars/Project/ERR000001_1.fastq.gz .
+~/raw_data$ cp /home/mars/Project/R1.fastq.gz .
 ```
 
-`NOTA 4`: No olvide el punto (.) al final. Recuerde que el punto se refiere al directorio actual. 
+`NOTA 4`: **No olvide el punto (.) al final**. Recuerde que el punto se refiere al directorio actual. 
 
 2.2 Moviendo archivos
 
@@ -340,15 +344,15 @@ $ cp /home/mars/Project/ERR000001_1.fastq.gz .
 mv es el comando que me permite mover un archivo de un lugar a otro. Esto tiene el efecto de mover en lugar de copiar el archivo, por lo que terminan con un único archivo en lugar de dos. También se puede utilizar para cambiar el nombre de un archivo, moviendo el archivo en el mismo directorio, pero que le da un nombre diferente.
 
 ```bash
-~/Project$ mv ERR000001_1.fastq.gz raw_data
-~/raw_data$ cd raw_data
+~/Project$ mv R2.fastq.gz raw_data
+~/Project$ cd raw_data
 ~/raw_data$ ls
 ```
 **Respuesta**
   
 ```bash  
 ~/raw_data$ cd ../data
-~/data$ mv /home/mars/Project/ERR000001_1.fastq.gz	.
+~/data$ mv /home/mars/Project/R1.fastq.gz	.
 ```
 **Respuesta**
   
@@ -356,19 +360,20 @@ mv es el comando que me permite mover un archivo de un lugar a otro. Esto tiene 
 
 ### rm (remove), rmdir (remove directory)
 
-rm es el comando que me permite borrar (eliminar) un archivo. A modo de ejemplo, vamos a crear una copia de un archivo luego eliminarlo. Dentro de tu directorio CurosLinux, escribimos:
-
+rm es el comando que me permite borrar (eliminar) un archivo.
 
 Puede utilizar el comando rmdir para eliminar un directorio (asegúrese de que esté vacío en primer lugar).
 
 ```bash
-$ cp sequence_1.fasta sequence_3.fasta
-$ ls
-$ rm sequence_3.fasta
+~/data$ rm R1.fastq.gz  
 $ ls
 ```
-Puede utilizar el comando rmdir para eliminar un directorio (asegúrese de que esté **vacío** en primer lugar).
+Puede utilizar el comando **rmdir** para eliminar un directorio (asegúrese de que esté **vacío** en primer lugar).
 
+***Ejercicio 4***
+
+Crearemos las carpeta fastqc y lo borraremos con el comando **rmdir**, tambien puede trabajar con el comando **rm -r** y dar su respuesta.
+  
 ## 2.4 Mostrar el contenido de un file
 
 ### clear (clear screen)
@@ -381,6 +386,10 @@ En el prompt, escribimos
 $ clear
 ```
 Esto borrará todo el texto volviendo al símbolo $ en la parte superior de la ventana.
+  
+**Ejercicio 5**
+
+Tambien intentemos trabajar con el comando reset. Señale las diferencias entre estos dos comandos.
 
 ### cat (concatenate)
 
