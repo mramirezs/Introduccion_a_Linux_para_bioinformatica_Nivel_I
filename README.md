@@ -127,8 +127,10 @@ Todos los archivos se agrupan en la estructura de directorios. El sistema de arc
 
 ### ls (list)
 
-Al iniciar sesión, el directorio actual de trabajo es el directorio principal. Su directorio de usuario tiene el mismo nombre que su nombre de usuario, por ejemplo, CursoLinux, y es donde se guardan los archivos personales y subdirectorios.
+Al iniciar sesión, el directorio actual de trabajo es el directorio principal. Su directorio de usuario tiene el mismo nombre que su nombre de usuario, por ejemplo, **mars**, y es donde se guardan los archivos personales y subdirectorios.
 
+![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/terminal.PNG)
+  
 Para averiguar lo que está en su directorio principal, escribimos:
 
 ```bash
