@@ -92,7 +92,7 @@ El bash shell tiene ciertas características que ayudan al usuario introducir co
 
 **Historial** - El shell mantiene una lista de comandos que ha escrito. Si usted tiene que repetir un comando, utilice las teclas de cursor para desplazarse hacia arriba y abajo en la lista de comandos anteriores o puede escribir el comando **history** para poder observar una lista de los comandos que estuvo trabajando. 
 
-`$ history`
+`~$ history`
 
 ## Archivos y Procesos
 
@@ -134,7 +134,7 @@ Al iniciar sesión, el directorio actual de trabajo es el directorio principal. 
 Para averiguar lo que está en su directorio principal, escribimos:
 
 ```bash
-$ ls
+~$ ls
 ```
 
 ![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/ls.PNG)  
@@ -151,7 +151,7 @@ Para listar el contenido en el directorio personal incluyendo aquellos cuyos nom
 `NOTA 1`: Entre el comando y sus respectivas opciones se debe incluir un espacio.   
   
 ```bash
-$ ls -a
+~$ ls -a
 ```
 
 ![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/ls_a.PNG)  
@@ -159,15 +159,15 @@ $ ls -a
 Otras opciones:
 
 ```bash
-$ ls -l
+~$ ls -l
 ```
 **Respuerta:**
 ```bash  
-$ ls -la
+~$ ls -la
 ```
 **Respuesta:**
 ```bash
-$ ls -lh
+~$ ls -lh
 ```
 **Respuesta:**
 
@@ -178,12 +178,12 @@ $ ls -lh
 Crearemos subdirectorios dentro de nuestro directorio personal para guardar los archivos que se crearan y a ser usados en este tutorial. Crearemos un subdirectorio llamado
 
 ```bash
-$ mkdir Project
+~$ mkdir Project
 ```
 Para ver el directorio que acabas de crear, escribimos:
 
 ```bash
-$ ls
+~$ ls
 
 Desktop  Documents  Downloads  Music  Pictures  Project  Videos Project   
 ```
@@ -197,21 +197,21 @@ El comando cd, significa cambio del actual directorio de trabajo a otro director
 Para cambiar hacia el directorio **CursoLinux**, escribimos:
 
 ```bash
-$ cd CursoLinux
+~$ cd Project
 ```
 
-Luego, escribimos **ls** para ver el contenido (el cual deberá estar vacío).
+Luego, si escribimos **ls** para ver el contenido nos daremos cuenta que la carpeta se encuentr vacía.
 
 ***Ejercicio 1***
 
-Crearemos otros directorios dentro del directorio CursoLinux. Ejemplos: Genómica, Proteómica y Transcriptómica.
+Crearemos otros directorios dentro del directorio **Project**, con los nombres **raw_data** y **data**.
 
 ## 1.4. Lo directorios . y ..
 
-Aún en el directorio CursoLinux, escribir
+Aún en el directorio **Project**, escribir
 
 ```bash
-$ ls -a 
+~/Project$ ls -a 
 ```
 
 Como se puede ver, en el directorio CursoLinux (y en todos los otros directorios), hay dos directorios especiales llamados (.) y (..)
@@ -221,24 +221,24 @@ Como se puede ver, en el directorio CursoLinux (y en todos los otros directorios
 En LINUX, (.) significa el directorio actual, entonces escribimos:
 
 ```bash
-$ cd .  
+~/Project$ cd .  
 ```
 
-> NOTA 2: Hay un espacio entre el cd y el punto.
+`NOTA 2`: Hay un espacio entre el cd y el punto.
 
-Significa quedarse donde está (el directorio CursoLinux).
+Significa quedarse donde está (el directorio **Project**).
 
 ### El directorio contiguo (..)
 
 (..) Significa el contiguo al directorio actual, entonces escribimos:
 
 ```bash
-$ cd ..   
+~/Project$ cd ..
+~$  
 ```
-
 Le llevará un directorio en la jerarquía (de nuevo a su directorio personal). **¡Inténtalo ahora!**
 
-> NOTA 3: escribiendo **cd** sin argumentos siempre te devuelve a su directorio home. Esto es muy útil si se pierden en el sistema de archivos.
+`NOTA 3`: escribiendo **cd** sin argumentos siempre te devuelve a su directorio home. Esto es muy útil si se pierden en el sistema de archivos.
 
 ## 1.5. Nombre de rutas y pathnames
 
@@ -254,7 +254,7 @@ El pathname que veras es algo como esto:
 
 ```bash
 $ pwd
-/home/mars/CursoLinux   
+/home/mars/   
 ```
 
 ***Exercise 2***
@@ -268,34 +268,34 @@ Use los comandos cd, ls y pwd para explorar el sistema de archivos.
 Primero escribiremos cd para volver a su directorio home, a continuación, escribiremos:
 
 ```bash
-$ ls CursoLinux   
+$ ls Project   
 ```
 
-Para listar el contenido de tus directorios CursoLinux. Ahora escribamos
+Para listar el contenido de tus directorios Project. Ahora escribamos
 
 ```bash
-$ ls Genoma
+$ ls raw_data
 ```
-
+  
 Recibirás un mensaje como este:
 
-***Genoma: No such file or directory***	
+***raw_data: No such file or directory***	
 
-La razón es, Genomas no es tu directorio actual de trabajo. Para utilizar un comando en un archivo (o directorio) no en el directorio de trabajo actual (el directorio que se encuentran actualmente en), debe cambiar al directorio correcto, o especificar su ruta completa. Para listar los contenidos del directorio Genoma, debemos escribir: 
+La razón es, raw_data no es tu directorio actual de trabajo. Para utilizar un comando en un archivo (o directorio) no en el directorio de trabajo actual (el directorio que se encuentran actualmente en), debe cambiar al directorio correcto, o especificar su ruta completa. Para listar los contenidos del directorio Genoma, debemos escribir: 
 
 ```bash
-$ ls CursoLinux/Genomas
+$ ls Project/raw_data
 ```
 
 ### ~ (tu directorio home) ###
 
-Los directorios personales también pueden ser referidos por el carácter de tilde ~. Se puede utilizar para especificar rutas a partir de su directorio personal. Por lo que escribimos:
+Los directorios personales también pueden ser referidos por el carácter de tilde **~**. Se puede utilizar para especificar rutas a partir de su directorio personal. Por lo que escribimos:
 
 ```bash
-$ ls ~/CursoLinux
+$ ls ~/Project
 ```
 
-Mostrará una lista de los contenidos del directorio CursoLinux, no importa donde se encuentra actualmente en el sistema de archivos.
+Mostrará una lista de los contenidos del directorio Project, no importa donde se encuentra actualmente en el sistema de archivos.
 
 ## Segundo tutorial de LINUX
        
@@ -303,19 +303,34 @@ Mostrará una lista de los contenidos del directorio CursoLinux, no importa dond
 
 ### cp (copy)
 
-cp es el comando que hace una copia del archivo en el directorio de trabajo actual.
+**cp** es el comando que hace una copia del archivo en el directorio de trabajo actual.
 
-Lo que vamos a hacer ahora, es tomar un archivo almacenado en un área de acceso abierto del sistema de archivos, y utilizar el comando cp para copiarlo en el directorio de CursoLinux.
+Lo que vamos a hacer ahora es descargar los archivos fastq a nuestra carpeta Project con el comando **wget**:
 
 ```bash
-$ cp sequence_1.fasta sequence_2.fasta
-$ cp sequence_1.fasta CursoLinux/Genoma
-$ cd CursoLinux/Genoma
-$ cp /home/cursolinux/CursoLinux/sequence_2.fasta .
+$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_1.fastq.gz
+$ wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR000/ERR000001/ERR000001_2.fastq.gz  
+```
+Luego, tomar cada archivo y hacer uso del comando **cp** para copiarlo en el directorio de raw_data.
+
+```bash
+$ cp ERR000001_1.fastq.gz raw_data
+$ cp ERR000001_2.fastq.gz raw_data
 ```
 
-   
-> NOTA 4: No olvide el punto (.) al final. Recuerde que el punto se refiere al directorio actual. 
+Otras formas de copiar los archivos:
+```bash  
+$ cp ERR000001_1.fastq.gz R1.fastq.gz
+$ cp ERR000001_2.fastq.gz R2.fastq.gz
+```
+  
+```bash  
+Copiar un archivo desde su origen, en este caso estando en la carpeta **data**: 
+$ cp /home/mars/Project/ERR000001_1.fastq.gz .
+```
+
+`NOTA 4`: No olvide el punto (.) al final. Recuerde que el punto se refiere al directorio actual. 
+
 2.2 Moviendo archivos
 
 ### mv (move)
@@ -323,11 +338,18 @@ $ cp /home/cursolinux/CursoLinux/sequence_2.fasta .
 mv es el comando que me permite mover un archivo de un lugar a otro. Esto tiene el efecto de mover en lugar de copiar el archivo, por lo que terminan con un único archivo en lugar de dos. También se puede utilizar para cambiar el nombre de un archivo, moviendo el archivo en el mismo directorio, pero que le da un nombre diferente.
 
 ```bash
-$ mv sequence_2.fasta CursoLinux/Genoma
-$ cd CursoLinux/Genoma
-$ mv /home/cursolinux/CursoLinux/sequence_2.fasta	.
+~/Project$ mv ERR000001_1.fastq.gz raw_data
+~/raw_data$ cd raw_data
+~/raw_data$ ls
 ```
-
+**Respuesta**
+  
+```bash  
+~/raw_data$ cd ../data
+~/data$ mv /home/mars/Project/ERR000001_1.fastq.gz	.
+```
+**Respuesta**
+  
 ## 2.3 Borrar archivos y directorios
 
 ### rm (remove), rmdir (remove directory)
