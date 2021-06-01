@@ -117,7 +117,7 @@ Ejemplos de archivos:
 
 Todos los archivos se agrupan en la estructura de directorios. El sistema de archivos se organiza en una estructura jerárquica, como un **árbol invertido**. La parte superior de la jerarquía se denomina tradicionalmente root (escrita como una barra /)
 
-![image](https://github.com/mramirezs/Manual-basico-de-Linux-para-Bioinformatica/blob/main/estructura.png)
+![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/Estructure_Directories.PNG)
 
 ## Empezamos con los comandos básicos 
 
