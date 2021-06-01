@@ -149,8 +149,11 @@ Otras opciones:
 
 ```bash
 $ ls -l
+  _Respuesta_
 $ ls -la
+  _Respuesta_
 $ ls -lh
+  _Respuesta_
 ```
 
 `NOTA 1`: Entre el comando y sus respectivas opciones se debe incluir un espacio. 
