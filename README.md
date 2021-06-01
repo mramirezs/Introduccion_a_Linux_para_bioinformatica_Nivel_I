@@ -152,17 +152,23 @@ Para listar el contenido en el directorio personal incluyendo aquellos cuyos nom
 $ ls -a
 ```
 
+![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/ls_a.PNG)  
+  
 Otras opciones:
 
 ```bash
 $ ls -l
-  _Respuesta_
-$ ls -la
-  _Respuesta_
-$ ls -lh
-  _Respuesta_
 ```
-
+**Respuerta**
+```bash  
+$ ls -la
+```
+**Respuesta**
+```bash
+$ ls -lh
+```
+**Respuesta**
+  
 `NOTA 1`: Entre el comando y sus respectivas opciones se debe incluir un espacio. 
 
 ### 1.2 Crear directorios
