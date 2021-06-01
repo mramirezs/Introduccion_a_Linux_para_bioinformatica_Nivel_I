@@ -119,6 +119,8 @@ Todos los archivos se agrupan en la estructura de directorios. El sistema de arc
 
 ![image](https://github.com/bioinfoperu/Introduccion_a_Linux_para_bioinformatica/blob/main/img/Estructure_Directories.PNG)
 
+  _En clase mencionaremos que contiene cada diretorio_
+
 ## Empezamos con los comandos básicos 
 
 ## 1. Listado de archivos y directorios
