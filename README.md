@@ -148,6 +148,8 @@ ls lista todos los directorios o archivos contenidos en tu directorio personal; 
 
 Para listar el contenido en el directorio personal incluyendo aquellos cuyos nombres comienzan con un punto, escribimos:
 
+`NOTA 1`: Entre el comando y sus respectivas opciones se debe incluir un espacio.   
+  
 ```bash
 $ ls -a
 ```
@@ -159,17 +161,15 @@ Otras opciones:
 ```bash
 $ ls -l
 ```
-**Respuerta**
+**Respuerta:**
 ```bash  
 $ ls -la
 ```
-**Respuesta**
+**Respuesta:**
 ```bash
 $ ls -lh
 ```
-**Respuesta**
-  
-`NOTA 1`: Entre el comando y sus respectivas opciones se debe incluir un espacio. 
+**Respuesta:**
 
 ### 1.2 Crear directorios
 
@@ -178,13 +178,14 @@ $ ls -lh
 Crearemos subdirectorios dentro de nuestro directorio personal para guardar los archivos que se crearan y a ser usados en este tutorial. Crearemos un subdirectorio llamado
 
 ```bash
-$ mkdir CursoLinux
+$ mkdir Project
 ```
-![image](https://github.com/mramirezs/Manual-basico-de-Linux-para-Bioinformatica/blob/main/mkdir.png)
 Para ver el directorio que acabas de crear, escribimos:
 
 ```bash
 $ ls
+
+Desktop  Documents  Downloads  Music  Pictures  Project  Videos Project   
 ```
 
 ### 1.3. Cambio a un directorio diferente
