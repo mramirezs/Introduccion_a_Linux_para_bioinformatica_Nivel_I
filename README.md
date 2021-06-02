@@ -508,7 +508,9 @@ $ wc -l ERR000001_1.fastq
 ```
 Este último es el que nos interesa, ya que con el podemos hacer una combinación de comandos de la siguiente forma, escribimos:
 
+```bash
 $ grep "@ERR000001" ERR000001_1.fastq | wc -l 
+```
 
 ¿Que es lo que obtenemos?
 
