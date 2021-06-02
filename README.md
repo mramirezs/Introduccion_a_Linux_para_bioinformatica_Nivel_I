@@ -389,24 +389,43 @@ Esto borrará todo el texto volviendo al símbolo $ en la parte superior de la v
   
 **Ejercicio 5**
 
-Tambien intentemos trabajar con el comando reset. Señale las diferencias entre estos dos comandos.
+Tambien intentemos trabajar con el comando **reset**. Señale las diferencias entre estos dos comandos.
+
+### gzip
+
+Este comando nos permite descomprimir archivos con extensión .gz. Los archivos provenientes de secuenciado de lecturas o reads vienen comprimidos bajo este formato. Entonces aplicaremos el comando, primero para **descomprimir**_
+
+```bash
+~/data$ gzip -d ERR000001_1.fastq.gz  
+```
+```bash
+~/data$ ls -lh
+```
+Luego, podemos tambien comprimir el mismo archivos:
+
+```bash
+~/data$ gzip ERR000001_1.fastq  
+```
+```bash
+~/data$ ls -lh
+```
 
 ### cat (concatenate)
 
 El comando cat se puede utilizar para mostrar el contenido de un archivo en la pantalla.
 
 ```bash
-$ cat sequence_1.fasta
+$ cat ERR000001_1.fastq 
 ```
 
-Como se puede ver, el archivo es más largo que el tamaño de la ventana, por lo que desfilan por la pantalla por lo que es ilegible.
+Como se pueden ver, el archivo es más largo que el tamaño de la ventana, por lo que desfilan por la pantalla por lo que es ilegible.
 
 ### less
 
 El comando less escribe el contenido de un archivo en la pantalla de una página a la vez. Escribimos:
 
 ```bash
-$ less sequence_1.fasta	
+$ less ERR000001_1.fastq
 ```
 
 Presione la **barra espaciadora** si quieres ver otra página y escribir **q** si quieres salir de la lectura. Como puedes ver, less es usado en preferencia a cat para largos archivos.
@@ -416,65 +435,51 @@ Presione la **barra espaciadora** si quieres ver otra página y escribir **q** s
 El comando head escribe las primeras diez líneas de un archivo en la pantalla. En primer lugar, limpiamos la pantalla y a continuación, escribimos:
 
 ```bash
-$ head sequence_1.fasta
+$ head ERR000001_1.fastq
 ```
 
 Luego escribimos:
 
 ```bash
-$ head -5 sequence_1.fasta
+$ head -15 ERR000001_1.fastq
 ```
+
+```bash
+$ head -4 ERR000001_1.fastq
+```
+
+**Ejercicio 5**
+En la última linea de comandos se puede ver que se obtiene 4 lineas, podrian decirme ¿Qué representan?
 
 ### tail
 
 El comando tail escribe las diez últimas líneas de un archivo en la pantalla. Limpiamos la pantalla y escribimos:
 
 ```bash
-$ tail sequence_1.fasta
+$ tail ERR000001_1.fastq
 ```
 
+**Ejercicio 6**
 ¿Cómo se puede acceder a las últimas 15 líneas del archivo?
 
 ## 2.5 Buscar el contenido en un archivo
 
 ### Búsqueda sencilla usando less
 
-Usando less, se puede buscar, a través de un archivo de texto, una palabra clave o patrón. Escribimos
-
-```bash
-$ less sequence_1.fasta	
-```
-
-A continuación, todavía con less, escriba una barra diagonal (/) seguido de la palabra a buscar:
-
-/Mycobacterium
-
-/GACGATGTCA
-
-Como se puede ver, less busca y resalta la palabra clave. Escriba (n) para buscar la siguiente aparición de la palabra.
-
 ### grep (don't ask why it is called grep)
 
-grep es una de las muchas utilidades estándar de LINUX. Se busca en los archivos de palabras o patrones específicos. En primer lugar, limpiamos la pantalla, a continuación, escriba
+grep es una de las muchas utilidades estándar de LINUX. Se busca en los archivos de palabras o patrones específicos. En primer lugar, limpiamos la pantalla, a continuación, escribimos
 
 ```bash
-$ grep CACCGACGAGGCGCTGTT sequence_1.fasta	
+$ grep "CCCCCTTAAAA" ERR000001_1.fastq	
 ```
 
-Como se puede ver, grep ha impreso cada línea que contiene la palabra ciencia.
-
-O si tiene?
-
-Pruebe a escribir
-
-```bash
-$ grep Tumor sequence_1.fasta
-```
+Como se puede ver, grep ha impreso cada línea que contiene el patrón CCCCCTTAAAA.
 
 El comando grep distingue entre mayúsculas y minúsculas. Para hacer caso omiso de las distinciones mayúsculas/minúsculas, utilice la opción -i, es decir, escribimos:
 
 ```bash
-$ grep -i tumor sequence.fasta
+$ grep -i "ccCCCTTAAAA" ERR000001_1.fastq
 ```
 
 Para buscar una frase o patrón, debe encerrarlo entre comillas simples (el símbolo de apóstrofo).
@@ -486,7 +491,7 @@ Algunas de las otras opciones de grep son:
     -c: imprimir sólo el número total de líneas coincidentes
 
 ```bash
-$ grep -ivc CACCGACGAGGCGCTGTT sequence.fasta	
+$ grep -ivc "CCCCCTTAAAA" ERR000001_1.fastq	
 ```
 
 ### wc (word count)
@@ -494,12 +499,19 @@ $ grep -ivc CACCGACGAGGCGCTGTT sequence.fasta
 Una pequeña utilidad práctica es el comando wc, abreviatura de recuento de palabras. Para hacer un recuento de palabras en sequence_1.fasta, escribimos:
 
 ```bash
-$ wc -w sequence_1.fasta	
+$ wc -w ERR000001_1.fastq	
 ```
 Para averiguar el número de líneas que tiene el archivo, escribimos:
 
 ```bash
-$ wc -l sequence.fasta
+$ wc -l ERR000001_1.fastq	
 ```
+Este último es el que nos interesa, ya que con el podemos hacer una combinación de comandos de la siguiente forma, escribimos:
 
-# ¡Gracias!
+$ grep "@ERR000001" ERR000001_1.fastq | wc -l 
+
+¿Que es lo que obtenemos?
+
+**Respuesta**
+
+# ¡Muchas Gracias por su asistencia!
