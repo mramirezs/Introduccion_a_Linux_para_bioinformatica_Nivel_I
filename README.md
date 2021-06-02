@@ -125,6 +125,8 @@ _En clase mencionaremos que contiene cada diretorio_
 
 ## Empezamos con los comandos básicos 
 
+## Primera parte
+
 ## 1. Listado de archivos y directorios
 
 ### ls (list)
@@ -175,7 +177,7 @@ Otras opciones:
 
 ### 1.2 Crear directorios
 
-### mkdir (make directory)
+## mkdir (make directory)
 
 Crearemos subdirectorios dentro de nuestro directorio personal para guardar los archivos que se crearan y a ser usados en este tutorial. Crearemos un subdirectorio llamado **Project**
 
@@ -190,7 +192,7 @@ Para ver el directorio que acabas de crear, escribimos:
 Desktop  Documents  Downloads  Music  Pictures  Project  Videos Project   
 ```
 
-### 1.3. Cambio a un directorio diferente
+## 1.3. Cambio a un directorio diferente
 
 ### cd (change directory)
 
@@ -248,7 +250,7 @@ Cambiaremos entre de directorios dentro de los directorios que hemos creado (**r
 
 ## 1.5. Nombre de rutas y pathnames
 
-## pwd (print working directory)
+### pwd (print working directory)
 
 Pathnames le permiten calcular dónde se encuentra en relación con el conjunto del sistema de archivos. Por ejemplo, para averiguar la ruta absoluta de un directorio home, escribimos cd para regresar a tu directorio home y luego escribimos:
 
@@ -269,7 +271,7 @@ Haremos uso del comando **pwd** dentro de las carpeta **raw_data** y **data**, d
 
 ## 1.6 Más información sobre el directorio home y pathnames
 
-## Entendiendo pathnames
+### Entendiendo pathnames
 
 Primero escribiremos **cd** para volver a su directorio home, a continuación, escribiremos:
 
@@ -303,7 +305,7 @@ $ ls ~/Project
 
 Mostrará una lista de los contenidos del directorio Project, no importa donde se encuentra actualmente en el sistema de archivos.
 
-## Segundo tutorial de LINUX
+## Segunda parte
        
 ## 2.1 Copiando archivos
 
