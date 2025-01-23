@@ -10,7 +10,7 @@ Manuel Alain Ramírez Sáenz --> Llámame `MARS`
 ## Bioinformática 🚀
 
 
-"La bioinformática comprende los métodos matemáticos, estadísticos y computacionales que pretenden solucionar  problemas biológicos usando secuencias de ADN y aminoácidos e información relacionada" ´Fredj Tekaia - Instituto Pasteur´
+"La bioinformática comprende los métodos matemáticos, estadísticos y computacionales que pretenden solucionar  problemas biológicos usando secuencias de ADN y aminoácidos e información relacionada" `Fredj Tekaia - Instituto Pasteur`
 
 ## Requerimientos
 
