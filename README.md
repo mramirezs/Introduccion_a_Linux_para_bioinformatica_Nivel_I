@@ -29,9 +29,7 @@ Manuel Alain Ramírez Sáenz --> Llámame `MARS`
 
 ## Objetivo de la Bioinformática
 
-```
 "Profundizar en nuestro entendimiento acerca de los organismos vivos y sus relaciones, partiendo desde el genoma que los codifica"
-```
 
 ## Campos de trabajo
 
