@@ -71,6 +71,18 @@ El sistema operativo LINUX se compone de tres partes: **el núcleo (Kernel), el 
 
 _Introduction to Linux and Command Line Tools for Bioinformatics_ (Figure 1.1)
 
+## Interfaz Gráfica de Usuario (GUI) vs. Interfaz de Línea de Comandos (CLI)
+
+|  Característica  |              GUI             |                CLI                |
+|:----------------:|:----------------------------:|:---------------------------------:|
+| Interacción      | Iconos y elementos visuales  | Comandos de texto                 |
+| Facilidad de uso | Más fácil para principiantes | Requiere conocimiento de comandos |
+| Eficiencia       | Puede ser más lento          | Generalmente más rápido           |
+| Flexibilidad     | Menos flexible               | Más flexible                      |
+| Precisión        | Menor                        | Mayor                             |
+| Apariencia       | Personalizable               | No personalizable                 |
+| Recursos         | Requiere más memoria         | Requiere menos memoria            |
+
 ## El nucleo (kernel)
 
 El kernel de Linux es el centro del sistema operativo: asigna el tiempo y la memoria a los programas, maneja el almacenamiento de archivos y la comunicación en respuesta a las llamadas del sistema operativo.
