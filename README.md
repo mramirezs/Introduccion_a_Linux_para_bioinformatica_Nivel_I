@@ -44,9 +44,7 @@ Manuel Alain Ramírez Sáenz --> Llámame `MARS`
 * Filogenia.
 * Educación.
 
-```
-La Bioinformática provee de algoritmos, bases de datos, interfaces y herramientas estadísticas para resolver nuestras preguntas biolólgicas.
-```
+La Bioinformática provee de algoritmos, bases de datos, interfaces y herramientas estadísticas para resolver nuestras preguntas biológicas.
 
 ## Sistema operativo Linux
 
